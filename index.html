@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+    <!--Navbar-->
+    <section>
+        <div class="container">
+            <header class="d-flex justify-content-center py-3 mb-3 fixed-top" style="background-color: white;">
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="./index.html" class="nav-link active d-flex align-items-center gap-1" aria-current="page">
+                  <svg xmlns="http://www.w3.org/2000/svg"  height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                  </svg>
+                  Home</a></li>
+                <li class="nav-item"><a href="./files/resume.html" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="./files/AboutMe.html" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="./files/ContactMe.html" class="nav-link">Contact Me</a></li>
+              </ul>
+            </header>
+          </div>
+    </section>
+
+    <!--Hero-->
+    <section class="hero-section">
+      <div class="container col-xxl-8 px-4 py-5 blue-background">
+        <div class="row flex-lg-row-reverse align-items-center g-3 py-3">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./images/ty.jpeg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="400"  loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-4">Hey, I'm Ty</h1>
+            <p class="lead mb-0">an aspiring developer.</p>
+            <p style="color: black; font-size:xx-small;">(be sure to check out my resume and other information:)</p>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="background-color: white;">
+      <div class="container py-5">
+        <h2 class="text-center mb-5 fst-normal">Statements From Those I Hold Dear</h2>
+    
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Will -->
+            <div class="carousel-item active blue-background">
+              <div class="p-5 text-center blue-background">
+                <div class="container py-5">
+                  <h2 class="text-body-emphasis">
+                    "Ty is a charismatic leader, often using his wit and humor to charm and befriend those around him! He saved me from my addiction to Xanax and Ozempic." 
+                  </h2>
+                  <img class="profile-img mt-5 rounded-circle" src="./images/will.jpeg" alt="will image" style="width: 150px; height: 150px;">
+                  <p class="col-lg-8 mx-auto lead mt-2 text-body-emphasis">
+                    Will, brother of bob
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Ben -->
+            <div class="carousel-item">
+              <div class="p-5 text-center blue-background">
+                <div class="container py-5">
+                  <h2 class="text-body-emphasis">
+                    "How will this affect Ty's legacy?"
+                  </h2>
+                  <img class="profile-img mt-5 rounded-circle" src="./images/ben.jpg" alt="ben image" style="width: 150px; height: 150px;">
+                  <p class="col-lg-8 mx-auto lead mt-2 text-body-emphasis">
+                    Ben, friend of bob
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Paul -->
+            <div class="carousel-item">
+              <div class="p-5 text-center blue-background">
+                <div class="container py-5">
+                  <h2 class="text-body-emphasis">
+                    "Not to make things about myself, but I am very outgoing and a great conversationalist who loves to have fun and enjoy life."
+                  </h2>
+                  <img class="profile-img mt-5 rounded-circle" src="./images/paul.JPEG" alt="paul image" style="width: 150px; height: 150px;">
+                  <p class="col-lg-8 mx-auto lead mt-2 text-body-emphasis">
+                    bob, just bob
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- David -->
+            <div class="carousel-item testimonial-slide text-center text-white">
+              <div class="overlay-container">
+                <div class="bg-overlay"></div>
+                <div class="content-wrapper p-5">
+                  <div class="container py-5">
+                    <h2 class="text-body-emphasis">
+                      "That's my twinnem we do everything together."
+                    </h2>
+                    <img class="profile-img mt-5 rounded-circle" src="./images/david.jpeg" alt="david image" style="width: 150px; height: 150px;">
+                    <p class="col-lg-8 mx-auto lead mt-2 text-body-emphasis">
+                      David, Partner in Crime
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Me-->
+    <section class="contactMe py-5 container">
+      <div class="d-flex justify-content-center align-items-center">
+        <h3> Don't trust my friends? Contact me:</h3>
+      </div>
+      <div class="d-flex gap-3 align-items-center justify-content-center">
+        <p>Email:<span class="text-body-emphasis">jenkinsty219@gmail.com </span></p>
+        <p>Cell:<span class="text-body-emphasis">443-832-8595</span></p>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <section>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">© Ty Jenkins</p>
+      
+          
+      
+          <ul class="nav col-md-4 justify-content-center">
+            <li class="nav-item"><a href="./files/resume.html" class="nav-link px-2 text-body-secondary">Resume</a></li>
+            <li class="nav-item"><a href="./files/AboutMe.html" class="nav-link px-2 text-body-secondary">About Me</a></li>
+            <li class="nav-item"><a href="./files/ContactMe.html" class="nav-link px-2 text-body-secondary">Contact Me</a></li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+</html>

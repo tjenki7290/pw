@@ -1,0 +1,123 @@
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #3399cc, #1e90ff);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+  
+.profile-img {
+    border-radius: 50%;
+    height: 100px;
+  }
+h1, h2, h3 {
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: 500;
+font-style: italic ;
+color: #3b82f6;
+
+}
+p, a, li {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-weight: 300;
+ color: #3b82f6;
+}
+
+.blue-background {
+  background-color: rgba(230, 240, 250, 0.6);
+}
+
+body{margin-top: 80px;}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(21%) sepia(100%) saturate(550%) hue-rotate(180deg) brightness(70%) contrast(100%);
+}
+
+.testimonial-slide {
+  background-image: url('./images/twinnem.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 400px;
+  color: white;
+  pointer-events: auto; /* allow interactions */
+}
+
+.overlay-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* prevent blocking interactions */
+}
+
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+  pointer-events: none; /* critical: don't block buttons */
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto; /* allow interactions inside content */
+}
+@media (max-width: 768px) {
+  .hero-section .row {
+    flex-direction: row !important;
+    align-items: center;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section .col-lg-6 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+  }
+
+  .hero-section img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3{
+    font-size: 1.2rem;
+  }
+  
+  p,a,li {
+    font-size: 0.8rem;
+  }
+  section.contactMe span {
+    font-size: x-small;
+  }
+
+}
